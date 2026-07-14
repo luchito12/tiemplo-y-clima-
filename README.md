@@ -32,12 +32,7 @@ Programa simple que muestra tu ubicación, temperatura, humedad y hora local, ac
 
 ---
 
-## 🔧 Sobre las APIs (por qué no hace falta configurar nada)
-
-Esta versión reemplaza el esquema anterior (que pedía claves de TimeZoneDB y OpenWeatherMap) por dos servicios públicos gratuitos que **no requieren API key ni registro**:
-
-- **[ip-api.com](https://ip-api.com)** — geolocalización por IP (ciudad, coordenadas y zona horaria).
-- **[Open-Meteo](https://open-meteo.com)** — datos de clima (temperatura, humedad).
+## 🔧 Sobre las APIs 
 
 La hora local se calcula con la librería estándar de Python (`zoneinfo`) usando la zona horaria que ya viene en la respuesta de ip-api, así que tampoco hace falta una tercera API solo para la hora.
 
